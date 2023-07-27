@@ -1,26 +1,40 @@
 package com.cc.java;
 
 public class Cat {
-    /*
-    //  Felder (fields) 
-    // Attribute (attibutes) 
-    // Eigenschaften (properties)
-    */
-    public String firstName;
-    public String furColor;
-    int age;
 
+    private String firstName;
+    private String furColor;
+    private int age;
 
+    public Cat(String firstName, String furColor, int age) {
+        this.firstName = firstName;
+        this.furColor = furColor;
+        this.age = age;
+    }
 
-    // this ----> Instanzvariable
+    public String getFirstName() {
+        return firstName;
+    }
 
-// public void tellYourAdress() {
-//     System.out.println("Blick von innen: " + this);
-   
-// }
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
 
-public String tellYourAdress() {
-    return "Blick von innen: " + this;
-}
+    public String getFurColor() {
+        return furColor;
+    }
+
+    public void setFurColor(String furColor) {
+        this.furColor = furColor;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
 
 }
